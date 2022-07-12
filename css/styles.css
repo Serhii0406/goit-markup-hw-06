@@ -575,8 +575,43 @@ a:link {
 }
 .sl-icon-footer {
     fill: var(--footer-text-color);
-        
 }
+.footer-form {
+    margin-left: 93px;
+
+}
+.footer-input {
+    display: inline-block;
+    background-color: var(--main-footers-bgc-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    min-width: 358px;
+    width: 50px;
+    padding: 15px 16px;
+    color: var(--footer-text-color);
+}
+.btn-footer {
+    background-color: var(--btn-bg-color);
+    
+    color: var(--footer-text-color);
+    cursor: pointer;
+    
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 28px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    margin-left: 12px;
+}
+
 /* modal */
 .backdrop {
     position: fixed;
@@ -600,14 +635,18 @@ a:link {
 }
 
 .modal {
-    height: 581px;
+    max-height: 581px;
+    height: 100%;
     width: 528px;
+    overflow-y: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);   
 
     background-color: var(--primary-bgc-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .btn-close {
@@ -628,7 +667,92 @@ a:link {
     fill: var(--logo-color);
     
 }
+.modal-inner {
+    padding: 12px 40px 40px 40px;
+}
+.modal-title {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);   
+}
 
+.form-field {
+    margin-bottom: 28px;
+}
+.form-field-label {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color);
+    margin-bottom: 4px;
+
+}
+.form-field-input {
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    padding: 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: var(--primary-text-color);
+}
+.form-field-textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+.form-field-textarea {
+    height: 120px;
+    width: 100%;
+    cursor: pointer;    
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    resize: none;
+}
+.checkbox-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+.checkbox-label-part {
+    color: var(--accent-color);
+    text-decoration-line: underline;
+}
+.btn-modal {
+    background-color: #188CE8;
+    
+    color: var(--footer-text-color);
+    cursor: pointer;
+    
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 55px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    margin-left: 124px;
+}
 /* portfolio */
 .section-portfolio {
     
