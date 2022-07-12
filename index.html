@@ -327,8 +327,13 @@
                     <form>
                         <label></label>
                         <input class="footer-input" type="email" name="email" placeholder="E-mail">
-                        <button class="btn-footer" type="submit">Подписаться</button>
+                        <button class="btn-footer" type="submit">Подписаться
+                            <svg class="svg-send" width="24px" height="24px">
+                                <use href="./images/icons3.svg#icon-send"> </use>
+                            </svg>
+                        </button>
                     </form>
+                    
                 </div>
           
             </div>
@@ -339,8 +344,8 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
         <button type="button" class="btn-close" data-modal-close> 
-                <svg class="svg-close" width="30px" height="30px">
-                    <use href="./images/icons.svg#icon-close"> </use>
+                <svg class="svg-close" width="18px" height="18px">
+                    <use href="./images/icons3.svg#icon-close"> </use>
                 </svg>
             </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
@@ -348,15 +353,31 @@
             <form class="form" name="main-form" autocomplete="on" novalidate >
                 <div class="form-field">
                     <label class="form-field-label" for="user-name">Имя</label>
-                    <input class="form-field-input" id="user-name" type="text" name="user-name">
+                    <div class="form-field-inner">
+                        <input class="form-field-input" id="user-name" type="text" name="user-name">
+                        <svg class="form-field-icon" width="12px" height="12px">
+                            <use href="./images/icons3.svg#icon-person"> </use>
+                        </svg>
+                    </div>
+                    
                 </div>
                 <div class="form-field">
                     <label class="form-field-label" for="user-phone">Телефон</label>
-                    <input class="form-field-input" id="user-phone" type="tel" name="user-phone">
+                    <div class="form-field-inner">
+                        <input class="form-field-input" id="user-phone" type="tel" name="user-phone">
+                        <svg class="form-field-icon" width="12px" height="12px">
+                            <use href="./images/icons3.svg#icon-phone"> </use>
+                        </svg>
+                    </div>                    
                 </div>
                 <div class="form-field">
                     <label class="form-field-label" for="user-email">Почта</label>
-                    <input class="form-field-input" id="user-email" type="email" name="user-email">
+                    <div class="form-field-inner">
+                        <input class="form-field-input" id="user-email" type="email" name="user-email">
+                        <svg class="form-field-icon" width="12px" height="12px">
+                            <use href="./images/icons3.svg#icon-email"> </use>
+                        </svg>
+                    </div>                    
                 </div>
                 <div class="form-field">
                     <label class="form-field-label" for="user-comment">Комментарий</label>
@@ -364,7 +385,7 @@
                 </div>
                 <div class="form-field">
                     <input id="terms-condition" type="checkbox" name="terms-condition">
-                    <label class="checkbox-label" for="terms-condition">Соглашаюсь с рассылкой и принимаю <span class="checkbox-label-part">Условия договора</span></label>
+                    <label class="checkbox-label" for="terms-condition">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-label-part">Условия договора</a></label>
                 </div>
                 <button class="btn-modal" type="submit">Отправить</button>
             </form>
