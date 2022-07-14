@@ -721,7 +721,7 @@ a:link {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     color: var(--primary-text-color);
-    outline: none;
+    /* outline: none; */
     
 }
 .form-field:hover .form-field-icon {
@@ -730,10 +730,10 @@ a:link {
 .form-field-input:hover {
     border: 1px solid var(--accent-color);
 }
-.form-field-input:focus {
+.form-field:focus-within .form-field-input {
     border: 1px solid var(--accent-color);    
 }
-.form-field-label:focus .form-field-icon {
+.form-field:focus-within .form-field-icon {
     fill: var(--accent-color);
 }
 .form-field-textarea::placeholder {
@@ -753,7 +753,7 @@ a:link {
     line-height: 1.14;
     letter-spacing: 0.01em;
     resize: none;
-    outline: none;
+    /* outline: none; */
 }
 .checkbox-label {
     font-style: normal;
