@@ -329,7 +329,7 @@
                         <input class="footer-input" type="email" name="email" placeholder="E-mail">
                         <button class="btn-footer" type="submit">Подписаться
                             <svg class="svg-send" width="24px" height="24px">
-                                <use href="./images/icons3.svg#icon-send"> </use>
+                                <use href="./images/icons.svg#icon-send"> </use>
                             </svg>
                         </button>
                     </form>
@@ -345,7 +345,7 @@
         <div class="modal">
         <button type="button" class="btn-close" data-modal-close> 
                 <svg class="svg-close" width="18px" height="18px">
-                    <use href="./images/icons3.svg#icon-close"> </use>
+                    <use href="./images/icons.svg#icon-close"> </use>
                 </svg>
             </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
@@ -354,9 +354,9 @@
                 <div class="form-field">
                     <label class="form-field-label" for="user-name">Имя</label>
                     <div class="form-field-inner">
-                        <input class="form-field-input" id="user-name" type="text" name="user-name" placeholder=" ">
+                        <input class="form-field-input" id="user-name" type="text" name="user-name" placeholder=" " required>
                         <svg class="form-field-icon" width="12px" height="12px">
-                            <use href="./images/icons3.svg#icon-person"> </use>
+                            <use href="./images/icons.svg#icon-person"> </use>
                         </svg>
                     </div>
                     
@@ -364,18 +364,18 @@
                 <div class="form-field">
                     <label class="form-field-label" for="user-phone">Телефон</label>
                     <div class="form-field-inner">
-                        <input class="form-field-input" id="user-phone" type="tel" name="user-phone" placeholder=" ">
+                        <input class="form-field-input" id="user-phone" type="tel" name="user-phone" placeholder=" " required>
                         <svg class="form-field-icon" width="12px" height="12px">
-                            <use href="./images/icons3.svg#icon-phone"> </use>
+                            <use href="./images/icons.svg#icon-phone"> </use>
                         </svg>
                     </div>                    
                 </div>
                 <div class="form-field">
                     <label class="form-field-label" for="user-email">Почта</label>
                     <div class="form-field-inner">
-                        <input class="form-field-input" id="user-email" type="email" name="user-email" placeholder=" ">
+                        <input class="form-field-input" id="user-email" type="email" name="user-email" placeholder=" " required>
                         <svg class="form-field-icon" width="12px" height="12px">
-                            <use href="./images/icons3.svg#icon-email"> </use>
+                            <use href="./images/icons.svg#icon-email"> </use>
                         </svg>
                     </div>                    
                 </div>
@@ -383,8 +383,16 @@
                     <label class="form-field-label" for="user-comment">Комментарий</label>
                     <textarea class="form-field-textarea" name="user-comment" id="user-comment" placeholder="Введите текст"></textarea>
                 </div>
-                <div class="form-field">
-                    <input id="terms-condition" type="checkbox" name="terms-condition">
+                <div class="form-field checkbox">
+                    <div class="checkbox-control">
+                        <input class="checkbox-input visually-hidden" id="terms-condition" type="checkbox" name="terms-condition" required>
+                        <svg class="checkbox-icon" width="16px" height="15px">
+                            <use href="./images/icons.svg#icon-checkbox"></use>
+                        </svg>
+                        <svg class="checkbox-icon-check" width="16px" height="15px">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </div>                    
                     <label class="checkbox-label" for="terms-condition">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-label-part">Условия договора</a></label>
                 </div>
                 <button class="btn-modal" type="submit">Отправить</button>
