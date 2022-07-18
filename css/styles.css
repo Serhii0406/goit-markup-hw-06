@@ -646,7 +646,6 @@ a:link {
     max-height: 581px;
     height: 100%;
     width: 528px;
-    /* overflow-y: auto; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -803,7 +802,16 @@ a:link {
 .checkbox-input:checked ~ .checkbox-icon-check {
     opacity: 1;
 }
+.terms-condition {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 
+    color: var(--secondary-text-color)
+}
 .btn-modal {
     background-color: #188CE8;
     
